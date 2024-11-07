@@ -41,7 +41,7 @@ void backtrack(vector<int>& result, vector<int>& dec, int n, int index){
         for(int i = index; i<pow(2, n); i++){
             if(result.size()==0){
                 result.push_back(dec[i]);
-                backtrack(result, dec, n, i+1);
+                backtrack(result, dec, n, index+1);
                 //result.pop_back();
             }
             else{
