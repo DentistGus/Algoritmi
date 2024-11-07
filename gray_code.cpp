@@ -12,7 +12,10 @@ bool is_solution(int result_size, int n){
 void process_solution(vector<int>& result){
     cout<<"[";
     for(int i = 0; i<result.size(); i++){
-        cout<<result[i]<<", ";
+        if(i==result.size()-1){
+            cout<<result[i];
+        }
+        else cout<<result[i]<<", ";
     }
     cout<<"]";
     return;
