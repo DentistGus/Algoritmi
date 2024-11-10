@@ -58,7 +58,7 @@ vector<int> generates_prime_numbers(int sum, int p){
 }    
 
 void backtrack(vector<int>& result, int sum, int n, int p, vector<int>& primes){
-    if(is_solution(result, sum ,n)){
+    if(is_solution(result, sum, n)){
         process_solution(result);
     }
     for(int i = 0; i<primes.size(); i++){
